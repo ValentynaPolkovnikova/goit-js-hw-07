@@ -32,15 +32,12 @@ const galleryList = document.querySelector('.gallery');
 const createGalleryItem = (image) => {
   const listItem = document.createElement('li');
   listItem.classList.add('gallery-item');
-  // listItem.innerHTML = 'margin: 8px';
-
-
+ 
   const imageElement = document.createElement('img');
   imageElement.src = image.url;
   imageElement.alt = image.alt;
   imageElement.classList.add('gallery-image');
-  // imageElement.insertAdjacentHTML("beforeend", 'width: 100%; height: auto');
-
+  
   listItem.appendChild(imageElement);
   return listItem;
 };
@@ -53,7 +50,6 @@ const appendGalleryToDom = (galleryItems) => {
   });
   galleryList.appendChild(fragment);
 };
-// galleryList.insertAdjacentHTML("beforeend", 'display: flex; list-style: none; padding: 0;');
 
 appendGalleryToDom(images);
 

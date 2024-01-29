@@ -14,7 +14,7 @@ function createBoxes() {
     return;
   }
 
-  destroyBoxes(); // очищає вміст, видаляючи всі створені елементи
+  destroyBoxes(); // clears the content by removing all created items
 
   let size = 30;
   for (let i = 0; i < amount; i++) {
